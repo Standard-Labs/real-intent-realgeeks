@@ -16,7 +16,6 @@ COLUMN_MAPPINGS = {
     "household_income": "MISC Notes"
 }
 
-
 def main():
     st.title('Real Intent to Real Geeks Converter')
 

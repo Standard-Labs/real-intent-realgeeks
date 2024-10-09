@@ -33,6 +33,7 @@ def main():
 
         if not missing_columns:
             df = df[list(COLUMN_MAPPINGS.keys())].rename(columns=COLUMN_MAPPINGS)
+            df["MISC Notes"] = "Household Income: " + df["MISC Notes"].astype(str)
 
             # Display the resulting dataframe
             st.write("Converted DataFrame:")
